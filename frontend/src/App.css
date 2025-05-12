@@ -1,0 +1,104 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif; /* A common and readable font */
+  margin: 20px; /* Add some space around the content */
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark gray text color */
+}
+
+/* Main container */
+.App {
+  max-width: 800px; /* Limit the width for better readability on large screens */
+  margin: 0 auto; /* Center the container */
+  background-color: #fff; /* White background for the content area */
+  padding: 20px; /* Add padding inside the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Headings */
+h1, h2 {
+  color: #0056b3; /* A nice blue for headings */
+  border-bottom: 1px solid #eee; /* A light line under headings */
+  padding-bottom: 10px; /* Space between heading and the line */
+  margin-top: 20px; /* Space above headings */
+}
+
+h1 {
+  text-align: center; /* Center the main title */
+  margin-bottom: 30px;
+}
+
+/* Forms */
+form {
+  display: flex; /* Arrange form elements in a row */
+  flex-wrap: wrap; /* Allow elements to wrap to the next line if needed */
+  gap: 10px; /* Space between form elements */
+  margin-bottom: 30px; /* Space below forms */
+  padding: 15px;
+  background-color: #f9f9f9; /* Light background for forms */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1; /* Allow inputs to grow to fill available space */
+  min-width: 150px; /* Minimum width for inputs */
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Lists */
+ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  background-color: #f9f9f9; /* Light background for list items */
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex; /* Arrange list item content and button in a row */
+  justify-content: space-between; /* Push the button to the right */
+  align-items: center; /* Vertically align content */
+}
+
+li button {
+  padding: 5px 10px;
+  background-color: #dc3545; /* Red button for delete */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Space between text and button */
+}
+
+li button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Optional: Style for the text within list items */
+li span {
+    flex-grow: 1; /* Allow the text to take up available space */
+    margin-right: 10px;
+}
